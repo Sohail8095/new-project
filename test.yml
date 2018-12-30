@@ -1,0 +1,8 @@
+---
+- hosts: all
+  user: ubuntu
+  sudo: yes
+  gather_facts: no
+  tasks:
+   - name: install httpd on centos?
+     action: apt-get name=httpd state=installed
